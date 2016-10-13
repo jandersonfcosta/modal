@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>modal js</title>
+        <link rel="stylesheet" type="text/css" href="modal.css">
+        <script type="text/javascript" src="modal.js">
+
+        </script>
+    </head>
+    <body>
+        <h1>modal js - demo</h1>
+        <button type="button" onclick="showModal1()">Show modal 1</button>
+        <button type="button" onclick="showModal2()">Show modal 2</button>
+
+        <script type="text/javascript">
+
+            var modal1 = new Modal({
+                content: "Hello World!! 1",
+                width: 600,
+                height: 400,
+                closeOut: false // opcional - padrão: true
+            });
+
+            var modal2 = new Modal({
+                content: "Hello World!! 2",
+                width: 500,
+                height: 250
+            });
+
+            function showModal1() {
+                modal1.show();
+            }
+
+            function showModal2() {
+                modal2.show();
+            }
+
+        </script>
+
+    </body>
+</html>
